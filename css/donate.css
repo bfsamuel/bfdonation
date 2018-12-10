@@ -46,6 +46,7 @@ a {
   font-size: 1.3em;
   font-weight: bold;
   min-height: 70px;
+  border-radius: 0;
 }
 
 .btn-pay-by-paypal {
@@ -54,7 +55,7 @@ a {
   color: #5091cd;
   font-weight: bold;
   min-height: 70px;
-
+  border-radius: 0;
 }
 
 .donate-buttons {
@@ -77,6 +78,7 @@ a {
   padding: 1em 1.5em;
   transition: 0.2s background;
 }
+
 .btn-donatenow {
   margin: 0 auto;
   display: block;
@@ -93,8 +95,7 @@ a {
   font-family: 'Roboto Condensed', sans-serif;
   border: 0px;
   color: #ffffff;
-  padding: 1em ;
-  transition: 0.2s background;
+  padding: 1em;
 }
 }
 
@@ -102,6 +103,11 @@ a {
 
 .logo {
   text-align: center;
+  padding: 1em;
+  margin: 222px
+}
+
+#logo {
   padding: 1em;
 }
 
@@ -270,9 +276,7 @@ select {
 
 /* Donate now button */
 
-#logo {
-  padding: 1em 0 0 0;
-}
+
 
 .back-link {
   font-weight: bold;
@@ -501,8 +505,7 @@ a.enter-address {
   transition: box-shadow 150ms ease;
 }
 
-.StripeElement--focus {
-}
+.StripeElement--focus {}
 
 .StripeElement--invalid {
   border-color: #fa755a;
