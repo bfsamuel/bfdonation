@@ -77,8 +77,12 @@ a {
   color: #ffffff;
   padding: 1em 1.5em;
   transition: 0.2s background;
+  cursor: pointer;
 }
-
+.bf-donate:hover {
+  background: #004990;
+ color:#fff;
+}
 .btn-donatenow {
   margin: 0 auto;
   display: block;
