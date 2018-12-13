@@ -57,7 +57,14 @@ a {
   min-height: 70px;
   border-radius: 0;
 }
-
+.btn-proceed {
+background: #5091cd;
+border-radius: 0;
+color:#fff;
+padding:1em;
+font-weight: bold;
+text-transform: uppercase;
+}
 .donate-buttons {
   margin: 1em 0;
 }
