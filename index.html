@@ -36,8 +36,8 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="d-flex align-items-center justify-content-between" id="">
-      <div class="logo"><img src="img/barnabas-blue-logo_GB.png"></div>
+    <div class="d-flex align-items-center justify-content-between">
+      <div id="logo"><img src="img/barnabas-blue-logo_GB.png"></div>
       <p class="secure-donation"><strong>Secure Donation</strong> <i class="fas fa-lock"></i></p>
     </div>
   </header>
@@ -50,65 +50,38 @@
     </picture>
   </section>
 
-  <section style="text-align:center;">
-<h1 style="text-align: center;padding:1em 0;">Donation form re-design</h1>
+  <section style="margin:3em 0;text-align:center">
 
-<p><a href=""><strong>Step 1</strong> - Donate front page</a></p>
+    <div class="container">
+      <div class="row">
 
-<p></p><a href=""><strong>Step 2</strong> - Gift aid, My details and stay in touch</a></p>
+        <div class="col-sm-6">
+          <h2 style="text-align:center;">Single</h2>
 
-<p><a href=""><strong>Step 3</strong> - Payment</a></p>
+          
+    <p><a href="/donate-page.html"><strong>Step 1</strong> - Donate front page</a></p>
+
+    <p></p><a href="/donate-details-page.html"><strong>Step 2</strong> - Gift aid, My details and stay in touch</a></p>
+
+    <p><a href="/card-details-page.html"><strong>Step 3</strong> - Payment</a></p>
+
+        </div>
+
+        <div class="col-sm-6">
+          <h2 style="text-align:center;">Regular</h2>
+
+          <p><a href="/donate-page.html"><strong>Step 1</strong> - Donate front page</a></p>
+          <p></p><a href="/donate-details-page-regular.html"><strong>Step 2</strong> - Gift aid, My details and stay in touch</a></p>
+          <p><a href="/card-details-page-regular.html"><strong>Step 3</strong> - Payment</a></p>
+      
+        </div>
+      </div>
+    </div>
+    <h1 style="text-align: center;padding:1em 0;">Donation form re-design</h1>
+
 
   </section>
-  
 
-  <!-- Other project functionality -->
-  <script>
-    function showotherProjects() {
-      var projectValue = document.getElementById('project').value;
-      var other = document.getElementById('otherDiv').style;
-      if (projectValue == 'other') {
-        other.display = "block";
-      } else {
-        other.display = "none";
-      }
-    }
-  </script>
-
-  <script>
-    function otherAmount() {
-      var projectValue = document.getElementById('regulardonation').value;
-      var other = document.getElementById('otheramountDiv').style;
-      if (projectValue == 'amountother') {
-        other.display = "block";
-      } else {
-        other.display = "none";
-      }
-    }
-  </script>
-
-  <script type="text/javascript">
-    function hideOther() {
-      document.getElementById('otheramount').style.display = 'none';
-    }
-
-    function showOther() {
-      document.getElementById('otheramount').style.display = 'block';
-    }
-  </script>
-
-
-  <script>
-    function regularDonation() {
-      var regularValue = document.getElementById('amountother').value;
-      var other = document.getElementById('').style;
-      if (regularValue == 'regular') {
-        other.display = "block";
-      } else {
-        other.display = "none";
-      }
-    }
-  </script>
 
 </body>
 
