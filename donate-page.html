@@ -54,7 +54,7 @@
     <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6  mx-auto">
       <div class="donatebox">
         <div class="col-sm-12 col-md-10 col-lg-8  mx-auto">
-          <!--  <form /action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">-->
+          <form action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8" validate>
           <h1 class="donatebox-h1">Donate today</h1>
           <div class="donation-type_wrapper">
             <ul class="btn-group btn-group-toggle no-margin" data-toggle="buttons">
@@ -68,7 +68,6 @@
             </ul>
           </div>
 
-          <!-- DONATION AMOUNT - SINGLE -->
 
           <div class="donation-amount_wrapper hide" id="singleblock">
             <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
@@ -90,7 +89,7 @@
 
 
           <div id="otheramount" class="hide">
-            <span class="other-amount-text">Please enter an amount: £</span>
+            <span class="other-amount-text">Please enter an amount: <span class="other-amount-pound">£</span></span>
             <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
           </div>
           <div class="donation-projectchoice_wrapper">
@@ -133,13 +132,13 @@
             </select>
           </div>
 
-          <div id="anotherDonation" style="width:auto;text-align: left;"class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="anotherDonation" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="">
-              <p style="text-align: center;padding:1em 0;margin:0;"> AND</p>
+              <p>AND</p>
             <input id="" style="width:60px;text-align: left;border:2px solid #5091cd;" placeholder="£" class="form-field-input" name="">
 
               <strong style="padding:0 0.5em;">to the</strong>
-              <select id="" style="width:auto;text-align: left;" class="" name="">
+              <select id="" style="width:auto;text-align: left;">
 
                 <option value="00-1031: Students Fund">00-1031: Students' Fund</option>
                 <option value="00-1032: Middle East Fund to help Christians in Syria">00-1032: Middle East Fund to help
@@ -166,14 +165,12 @@
               aria-controls="anotherDonation">&nbsp; <i title="Delete" alt="Delete"class="fas fa-trash-alt"></i></a>
             </div>
           </div>
-          <a class="" style="cursor: pointer;" type="" data-toggle="collapse" data-target="#anotherDonation" aria-expanded="true"
+          <a style="cursor: pointer;" type="" data-toggle="collapse" data-target="#anotherDonation" aria-expanded="true"
           aria-controls="anotherDonation"><p style="cursor: pointer;padding:1em 0;margin:0;font-weight: bold;text-decoration: underline;">Add another donation +</p></a>
           <div class="donate-buttons">
-            <a href="donate-details-page.html"><button class="bf-donate">Donate now</button></a>
+        <button type="submit"class="bf-donate">Donate now</button>
           </div>
 
-      
-          <!--   </form>-->
         </div>
       </div>
     </div>
@@ -212,7 +209,7 @@
           </div>
         </div>
         <div class="card">
-          <a style="" class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseTwo"
+          <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingTwo">
               <div class="d-flex align-items-center justify-content-start">
@@ -230,7 +227,7 @@
           </div>
         </div>
         <div class="card">
-          <a style="" class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseThree"
+          <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseThree"
             aria-expanded="true" aria-controls="collapseThree">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingThree">
               <div class="d-flex align-items-center justify-content-start">
@@ -266,7 +263,7 @@
             <div class="card-body">
               <p>Please click on the button to print our donation form, complete and post to your nearest Barnabas Fund
                 office.</p>
-              <p><strong><a target="_blank" style="color:#000;" href="https://barnabasfund.org/sites/default/files/files/barnabas-aid-2017-form-gb.pdf">Postal
+              <p><strong><a target="_blank" class="donate-a" href="https://barnabasfund.org/sites/default/files/files/barnabas-aid-2017-form-gb.pdf">Postal
                     donate form</a></strong></p>
             </div>
           </div>
@@ -279,7 +276,7 @@
     <div class="mt-5">
       <div class="col-sm-12 mx-auto">
         <div class="d-flex justify-content-center align-items-center ">
-          <img style="" src="https://barnabasfund.org/sites/default/files/images/assets/fundraising-regulator-logo.png" />
+          <img src="https://barnabasfund.org/sites/default/files/images/assets/fundraising-regulator-logo.png" />
           <img style="width:100px;" src="img/powered_by_stripe.png" />
         </div>
         <p style="text-align:center;font-size:0.7em;margin:0;padding:1em 0;">Registered UK charity number: 1092935

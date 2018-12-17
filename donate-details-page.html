@@ -48,6 +48,10 @@
           </div>
         </div>
       </div>
+
+
+<form action="card-details-page.html" class="needs-validation" accept-charset="UTF-8" novalidate>
+
       <!-- GIFT AID -->
       <div class="donate-giftaid">
 
@@ -85,14 +89,12 @@
 
       <!-- MY DETAILS -->
       <div class="donate-mydetails">
-
-        <!-- <form action="card-details-page.html" method="post" id="" accept-charset="UTF-8" novalidate>-->
         <h2 class="donate-h2">My details</h2>
 
         <label class="form-field-label">Name *</label>
         <div class="form-row">
           <div class="col-md-2 mb-3">
-            <select class="form-field-input" name="country" required>
+            <select class="form-control form-field-input" name="country">
               <option value="">Mr</option>
               <option value="">Mrs</option>
               <option value="">Ms</option>
@@ -103,20 +105,26 @@
             </select>
           </div>
           <div class="col-md-5 mb-3">
-            <input type="text" class="form-field-input" id="validationCustom02" placeholder="First name" value=""
+            <input type="text" class="form-control form-field-input" id="validationCustom02" placeholder="First name" value=""
               required>
+              <div class="invalid-feedback">
+              Please fill in your first name
+              </div>
           </div>
           <div class="col-md-5 mb-3">
             <div class="input-group">
-              <input type="text" class="form-field-input" id="validationCustomUsername" placeholder="Last name"
+              <input type="text" class="form-control form-field-input" id="validationCustomUsername" placeholder="Last name"
                 aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please fill in your last name
+                  </div>
             </div>
           </div>
         </div>
 
         <div class="form-field-wrapper">
           <label class="form-field-label">Country *</label>
-          <select class="form-field-input" name="country">
+          <select class="form-field-input" name="country" required>
             <option value="United Kingdom">United Kindom</option>
             <option value="New Zealand">New Zealand</option>
             <option value="Australia">Australia</option>
@@ -125,22 +133,28 @@
         </div>
         <label class="form-field-label">Postcode *</label>
         <div class="input-group form-field mb-3">
-          <input type="text" class="form-control form-field-input" placeholder="">
+          <input type="text" class="form-control form-field-input" placeholder="" required>
           <div class="input-group-append">
             <button class="btn find-address" type="button" data-toggle="collapse" data-target="#address-option"
               aria-expanded="false" aria-controls="address-option">Find address</button>
           </div>
+          <div class="invalid-feedback">
+            Please enter your postcode
+            </div>
         </div>
         <div class="collapse" id="address-option">
           <div class="form-field-wrapper">
             <label class="form-field-label">Select your address</label>
-            <select class="form-field-input" name="">
+            <select class="form-field-input" name="" required>
               <option value="" placeholder="Select address">Please select</option>
               <option value="United Kingdom">70 Pewsey Road, SN3 2HA</option>
               <option value="New Zealand">71 Pewsey Road, SN3 2HA</option>
               <option value="Australia">72 Pewsey Road, SN3 2HA</option>
               <option value="United States">73 Pewsey Road, SN3 2HA</option>
             </select>
+ <div class="invalid-feedback">
+            Please select your address
+            </div>
           </div>
         </div>
         <div class="form-field-wrapper">
@@ -149,33 +163,43 @@
           <div class="collapse" id="collapseExample">
             <div class="form-field-wrapper">
               <label class="form-field-label">Address 1 *</label>
-              <input type="text" class="form-field-input">
+              <input type="text" class="form-control form-field-input" required>
+              <div class="invalid-feedback">
+                Please fill in your address line 1
+                </div>
             </div>
             <div class="form-field-wrapper">
               <label class="form-field-label">Address 2</label>
-              <input type="text" class="form-field-input">
+              <input type="text" class="form-control form-field-input">
             </div>
             <div class="form-field-wrapper">
-              <label class="form-field-label">City / Town *</label>
-              <input type="text" class="form-field-input">
+              <label class="form-field-label">Town/City *</label>
+              <input type="text" class="form-control form-field-input" required>
+              <div class="invalid-feedback">
+                Please fill in your town/city
+                </div>
+
             </div>
             <div class="form-field-wrapper">
-              <label class="form-field-label">State / County</label>
-              <input type="text" class="form-field-input">
+              <label class="form-field-label">County</label>
+              <input type="text" class="form-control form-field-input">
             </div>
           </div>
         </div>
         <div class="form-field-wrapper">
           <label class="form-field-label">Email *</label>
-          <input type="text" class="form-field-input">
+          <input type="text" class="form-control form-field-input" required>
+          <div class="invalid-feedback">
+            Please fill in your email
+            </div>
         </div>
         <div class="form-field-wrapper">
           <label class="form-field-label">Telephone (Optional)</label>
-          <input type="text" class="form-field-input">
+          <input type="text" class="form-control form-field-input">
         </div>
         <div class="form-field-wrapper">
-          <label class="form-field-label">How did you hear about us?</label>
-          <select class="form-field-input" name="">
+          <label class="form-field-label">How did you hear about us? *</label>
+          <select class="form-control form-field-input" name="">
             <option value="" placeholder="">Please select</option>
             <option value="">Church</option>
             <option value="">Word of mouth</option>
@@ -186,8 +210,6 @@
             <option value="">Event</option>
             <option value="">Social media</option>
             <option value="">Barnabas aid magazine</option>
-            <option value="">Barnabas aid magazine</option>
-
             <option value="">Other</option>
 
           </select>
@@ -195,6 +217,7 @@
         </div>
       </div>
       <!-- STAY IN TOUCH -->
+      <div class="donate-stayintouch">
 
       <div class="my-5">
         <h2 class="donate-h2">Stay in touch</h2>
@@ -214,7 +237,7 @@
         <p>We will treat your information with respect. To see our privacy policy please click
           <strong><a target="_blank" href="/about/privacy-policy">here</a></strong>.</p>
       </div>
-
+    </div>
 
       <div class="my-5">
         <h2 class="donate-h2">My Payment</h2>
@@ -227,9 +250,8 @@
 
           </div>
           <div class="col-sm-12 col-lg-6 my-1">
-            <a href="card-details-page.html">
-              <button class="btn btn-pay-by-card">
-                <i class="far fa-credit-card"></i> Card</button></a>
+              <button type="submit" class="btn btn-pay-by-card">
+                <i class="far fa-credit-card"></i> Card</button>
 
           </div>
         </div>
@@ -239,7 +261,7 @@
 
     </div>
   </div>
-  <!--   </form>-->
+</form>
   </div>
 
   <!-- FOOTER  -->
@@ -257,6 +279,27 @@
     </div>
   </div>
 
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 </body>
 
 </html>
