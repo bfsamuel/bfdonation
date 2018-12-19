@@ -54,91 +54,61 @@
     <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6  mx-auto">
       <div class="donatebox">
         <div class="col-sm-12 col-md-10 col-lg-8  mx-auto">
-          <form action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8" validate>
-          <h1 class="donatebox-h1">Donate today</h1>
-          <div class="donation-type_wrapper">
-            <ul class="btn-group btn-group-toggle no-margin" data-toggle="buttons">
-              <li class="btn donation_type active">
-                <input type="radio" value="regular" name="regular" id="regular" checked="checked" autocomplete="off">
-                Regular
-              </li>
-              <li class="btn donation_type">
-                <input type="radio" name="single" id="single" autocomplete="off"> Single
-              </li>
-            </ul>
-          </div>
+          <form action="2-mydetails-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8" validate>
+            <h1 class="donatebox-h1">Donate today</h1>
+            <div class="donation-type_wrapper">
+              <ul class="btn-group btn-group-toggle no-margin" data-toggle="buttons">
+                <li class="btn donation_type active">
+                  <input type="radio" value="regular" name="regular" id="regular" checked="checked" autocomplete="off">
+                  Regular
+                </li>
+                <li class="btn donation_type">
+                  <input type="radio" name="single" id="single" autocomplete="off"> Single
+                </li>
+              </ul>
+            </div>
 
 
-          <div class="donation-amount_wrapper hide" id="singleblock">
-            <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
-              <li class="btn donation_amount active" onclick="hideOther();">
-                <input type="radio" name="amounts" id="amount1" autocomplete="off"> £50
-              </li>
-              <li class="btn donation_amount" onclick="hideOther();">
-                <input type="radio" name="amounts" id="amount2" autocomplete="off"> £100
-              </li>
-              <li class="btn donation_amount" onclick="hideOther();">
-                <input type="radio" name="amounts" id="amount3" autocomplete="off"> £200
-              </li>
-              <li class="btn donation_amount" id="other" onclick="showOther();">
-                <input type="radio" id="other" name='thing' value="" onclick="show2();" autocomplete="off">Other
-              </li>
+            <div class="donation-amount_wrapper hide" id="singleblock">
+              <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
+                <li class="btn donation_amount active" onclick="hideOther();">
+                  <input type="radio" name="amounts" id="amount1" autocomplete="off"> £50
+                </li>
+                <li class="btn donation_amount" onclick="hideOther();">
+                  <input type="radio" name="amounts" id="amount2" autocomplete="off"> £100
+                </li>
+                <li class="btn donation_amount" onclick="hideOther();">
+                  <input type="radio" name="amounts" id="amount3" autocomplete="off"> £200
+                </li>
+                <li class="btn donation_amount" id="other" onclick="showOther();">
+                  <input type="radio" id="other" name='thing' value="" onclick="show2();" autocomplete="off">Other
+                </li>
 
-            </ul>
-          </div>
+              </ul>
+            </div>
 
 
-          <div id="otheramount" class="hide">
-            <span class="other-amount-text">Please enter an amount: <span class="other-amount-pound">£</span></span>
-            <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
-          </div>
-          <div class="donation-projectchoice_wrapper">
-            <strong>
-              <p>I want to give to:</p>
-            </strong>
-            <select id="project" class="project-choice" name="project" onclick="showotherProjects()">
-              <option value="00-000">00-000: General Fund</option>
-              <option value="00-345">00-345: Victims of Violence Fund</option>
-              <option value="00-1313">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
-              <option value="00-1313">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
-              <option value="other">Other Project</option>
-            </select>
-          </div>
+            <div id="otheramount" class="hide">
+              <span class="other-amount-text">Please enter an amount: <span class="other-amount-pound">£</span></span>
+              <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
+            </div>
+            <div class="donation-projectchoice_wrapper">
+              <strong>
+                <p>I want to give to:</p>
+              </strong>
+              <select id="project" class="project-choice" name="project" onclick="showotherProjects()">
+                <option value="00-000">00-000: General Fund</option>
+                <option value="00-345">00-345: Victims of Violence Fund</option>
+                <option value="00-1313">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
+                <option value="00-1313">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
+                <option value="other">Other Project</option>
+              </select>
+            </div>
 
-          <div id="otherDiv">
-            <label for="gifttype" style="font-weight:bold;">Please select the specific Project you would like to give
-              to:</label>
-            <select id="gifttype" class="my-details-input" name="gifttype">
-
-              <option value="00-1031: Students Fund">00-1031: Students' Fund</option>
-              <option value="00-1032: Middle East Fund to help Christians in Syria">00-1032: Middle East Fund to help
-                Christians in Syria</option>
-              <option value="00-1102: Women's Fund">00-1102: Women's Fund</option>
-              <option value="00-1120: Refugees Fund">00-1120: Refugees' Fund</option>
-              <option value="00-1125: Central Asia General Fund">00-1125: Central Asia General Fund</option>
-              <option value="00-113: Convert Fund">00-113: Convert Fund</option>
-              <option value="00-1188: The Middle East Fund">00-1188: The Middle East Fund</option>
-              <option value="00-1199: Operation Safe Havens">00-1199: Operation Safe Havens</option>
-              <option value="00-1313: Project Joseph to feed hungry Christians in Africa">00-1313: Project Joseph to
-                feed hungry Christians in Africa</option>
-              <option value="00-316: Practical Help for Christian Leaders">00-316: Practical Help for Christian Leaders</option>
-              <option value="00-345: Victims of Violence Fund">00-345: Victims of Violence Fund</option>
-              <option value="00-356: Small Business Start-Up Fund">00-356: Small Business Start-Up Fund</option>
-              <option value="00-360: Christian Literature Fund">00-360: Christian Literature Fund</option>
-              <option value="00-362: Bibles and Scriptures Fund">00-362: Bibles and Scriptures Fund</option>
-              <option value="00-430: Leadership Training Fund">00-430: Leadership Training Fund</option>
-              <option value="00-477: Pastor Support Fund">00-477: Pastor Support Fund</option>
-              <option value="00-477: Pastor Support Fund">AND ALL THE OTHER PROJECTS</option>
-            </select>
-          </div>
-
-          <div id="anotherDonation" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="">
-              <p>AND</p>
-            <input id="" style="width:60px;text-align: left;border:2px solid #5091cd;" placeholder="£" class="form-field-input" name="">
-
-              <strong style="padding:0 0.5em;">to the</strong>
-              <select id="" style="width:auto;text-align: left;">
+            <div id="otherDiv">
+              <label for="" class="specific-project"><strong>Please select the specific
+                  Project you would like to give to:</label>
+              <select id="" class="my-details-input" name="gifttype">
 
                 <option value="00-1031: Students Fund">00-1031: Students' Fund</option>
                 <option value="00-1032: Middle East Fund to help Christians in Syria">00-1032: Middle East Fund to help
@@ -151,7 +121,8 @@
                 <option value="00-1199: Operation Safe Havens">00-1199: Operation Safe Havens</option>
                 <option value="00-1313: Project Joseph to feed hungry Christians in Africa">00-1313: Project Joseph to
                   feed hungry Christians in Africa</option>
-                <option value="00-316: Practical Help for Christian Leaders">00-316: Practical Help for Christian Leaders</option>
+                <option value="00-316: Practical Help for Christian Leaders">00-316: Practical Help for Christian
+                  Leaders</option>
                 <option value="00-345: Victims of Violence Fund">00-345: Victims of Violence Fund</option>
                 <option value="00-356: Small Business Start-Up Fund">00-356: Small Business Start-Up Fund</option>
                 <option value="00-360: Christian Literature Fund">00-360: Christian Literature Fund</option>
@@ -160,16 +131,46 @@
                 <option value="00-477: Pastor Support Fund">00-477: Pastor Support Fund</option>
                 <option value="00-477: Pastor Support Fund">AND ALL THE OTHER PROJECTS</option>
               </select>
-
-              <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#anotherDonation" aria-expanded="true"
-              aria-controls="anotherDonation">&nbsp; <i title="Delete" alt="Delete"class="fas fa-trash-alt"></i></a>
             </div>
-          </div>
-          <a style="cursor: pointer;" type="" data-toggle="collapse" data-target="#anotherDonation" aria-expanded="true"
-          aria-controls="anotherDonation"><p style="cursor: pointer;padding:1em 0;margin:0;font-weight: bold;text-decoration: underline;">Add another donation +</p></a>
-          <div class="donate-buttons">
-        <button type="submit"class="bf-donate">Donate now</button>
-          </div>
+
+            <div id="anotherDonation" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="">
+                <p>AND</p>
+                <input style="width:60px;text-align: left;border:2px solid #5091cd;" placeholder="£" class="form-field-input"
+                  name="">
+
+                <span>to the</span>
+                <select id="" style="width:auto;text-align: left;">
+                  <option value="00-1031: Students Fund">00-1031: Students' Fund</option>
+                  <option value="00-1032: Middle East Fund to help Christians in Syria">00-1032: Middle East Fund to help Christians in Syria</option>
+                  <option value="00-1102: Women's Fund">00-1102: Women's Fund</option>
+                  <option value="00-1120: Refugees Fund">00-1120: Refugees' Fund</option>
+                  <option value="00-1125: Central Asia General Fund">00-1125: Central Asia General Fund</option>
+                  <option value="00-113: Convert Fund">00-113: Convert Fund</option>
+                  <option value="00-1188: The Middle East Fund">00-1188: The Middle East Fund</option>
+                  <option value="00-1199: Operation Safe Havens">00-1199: Operation Safe Havens</option>
+                  <option value="00-1313: Project Joseph to feed hungry Christians in Africa">00-1313: Project Joseph to feed hungry Christians in Africa</option>
+                  <option value="00-316: Practical Help for Christian Leaders">00-316: Practical Help for Christian Leaders</option>
+                  <option value="00-345: Victims of Violence Fund">00-345: Victims of Violence Fund</option>
+                  <option value="00-356: Small Business Start-Up Fund">00-356: Small Business Start-Up Fund</option>
+                  <option value="00-360: Christian Literature Fund">00-360: Christian Literature Fund</option>
+                  <option value="00-362: Bibles and Scriptures Fund">00-362: Bibles and Scriptures Fund</option>
+                  <option value="00-430: Leadership Training Fund">00-430: Leadership Training Fund</option>
+                  <option value="00-477: Pastor Support Fund">00-477: Pastor Support Fund</option>
+                  <option value="00-477: Pastor Support Fund">AND ALL THE OTHER PROJECTS</option>
+                </select>
+
+                <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#anotherDonation"
+                  aria-expanded="true" aria-controls="anotherDonation">&nbsp; <i title="Delete" alt="Delete" class="fas fa-trash-alt"></i></a>
+              </div>
+            </div>
+            <a data-toggle="collapse" data-target="#anotherDonation" aria-expanded="true" aria-controls="anotherDonation">
+              <p class="add-donation-text" style="padding:1em 0;margin:0;font-weight: bold;text-decoration: underline;">Add
+                another donation +</p>
+            </a>
+            <div class="donate-buttons">
+              <button type="submit" class="btn-donate">Donate now</button>
+            </div>
 
         </div>
       </div>
@@ -209,8 +210,8 @@
           </div>
         </div>
         <div class="card">
-          <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseTwo"
-            aria-expanded="true" aria-controls="collapseTwo">
+          <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+            aria-controls="collapseTwo">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingTwo">
               <div class="d-flex align-items-center justify-content-start">
                 <i class="fas fa-phone fa-2x other-ways-icon"></i>
@@ -227,8 +228,8 @@
           </div>
         </div>
         <div class="card">
-          <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseThree"
-            aria-expanded="true" aria-controls="collapseThree">
+          <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+            aria-controls="collapseThree">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingThree">
               <div class="d-flex align-items-center justify-content-start">
                 <i class="fas fa-mobile fa-2x other-ways-icon"></i>
@@ -277,11 +278,10 @@
       <div class="col-sm-12 mx-auto">
         <div class="d-flex justify-content-center align-items-center ">
           <img src="https://barnabasfund.org/sites/default/files/images/assets/fundraising-regulator-logo.png" />
-          <img style="width:100px;" src="img/powered_by_stripe.png" />
+          <img class="stripe-logo" src="img/powered_by_stripe.png" />
         </div>
-        <p style="text-align:center;font-size:0.7em;margin:0;padding:1em 0;">Registered UK charity number: 1092935
-          Company registered in England. Number: 4029536</br> <a href="">Terms and Conditions</a> | <a href="">Privacy
-            Policy</a></p>
+        <p class="footer-text">Registered UK charity number: 1092935 Company registered in England. Number: 4029536</br>
+          <a href="">Terms and Conditions</a> | <a href="">Privacy Policy</a></p>
       </div>
     </div>
   </div>

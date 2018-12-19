@@ -9,12 +9,15 @@
 .hide {
   display: none;
 }
+
 .donate-a {
-  color:#000;
+  color: #000;
 }
+
 a {
   color: #000;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /**** HEADINGS ****/
@@ -24,7 +27,7 @@ a {
   color: #004990;
   font-weight: bold;
   font-size: 1.5em;
-  padding: 1em 0;
+  padding: 0 0 1em 0;
 }
 
 .donate-h3 {
@@ -73,7 +76,7 @@ a {
   margin: 1em 0;
 }
 
-.bf-donate {
+.btn-donate {
   font-size: 18px;
   background: #d61215;
   color: #fff;
@@ -96,7 +99,7 @@ a {
   color: #fff;
 }
 
-.btn-donatenow {
+.btn-payment {
   margin: 0 auto;
   display: block;
   width: 100%;
@@ -253,8 +256,10 @@ a {
   font-size: 25px;
   font-weight: bold;
   color: #004990;
-  "
 
+}
+
+.specific-project {
 }
 
 .donation-projectchoice_wrapper {
@@ -265,9 +270,20 @@ a {
   width: auto;
   text-align: left;
 }
+
 #anotherDonation p {
-  text-align: center;padding:1em 0;margin:0;
-} 
+  text-align: center;
+  padding: 1em 0;
+  margin: 0;
+}
+
+.add-donation-text {
+  padding: 1em 0;
+  margin: 0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 select {
   width: 100%;
   margin: 0;
@@ -297,6 +313,7 @@ select {
   color: #004990;
   font-size: 1.5em;
   padding: 2em 0;
+  text-align: center;
 }
 
 #otherDiv {
@@ -345,7 +362,6 @@ a.enter-address {
   cursor: pointer;
 }
 
-
 .find-address {
   font-size: 1.3em;
   padding: 0 1em;
@@ -354,6 +370,8 @@ a.enter-address {
   text-transform: uppercase;
   border-radius: 0;
 }
+
+/* Gift aid */
 
 .gift-aid-claim {
   background: #fff;
@@ -379,6 +397,7 @@ a.enter-address {
   cursor: pointer;
 }
 
+/* Other ways to give */
 .other-ways-heading {
   color: #fff;
   background-color: none;
@@ -457,8 +476,6 @@ a.enter-address {
   border: 2px solid #004990;
 }
 
-.checkbox-container:hover input~.checkmark {}
-
 .checkbox-container input:checked~.checkmark {
   background-color: #004990;
 }
@@ -500,6 +517,10 @@ a.enter-address {
   padding: 1em 0;
 }
 
+.stripe-logo {
+  width: 100px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 
 @media (max-width: 768px) {
@@ -509,10 +530,6 @@ a.enter-address {
   }
 }
 
-/**
- * The CSS shown here will not be introduced in the Quickstart guide, but shows
- * how you can use CSS to style your Element's container.
- */
 .StripeElement {
   background-color: white;
   height: 40px;
@@ -521,8 +538,6 @@ a.enter-address {
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
 }
-
-.StripeElement--focus {}
 
 .StripeElement--invalid {
   border-color: #fa755a;
@@ -539,6 +554,10 @@ a.enter-address {
 .invalid-feedback {
   font-weight: bold;
 }
-.custom-select.is-valid, .form-control.is-valid, .was-validated .custom-select:valid, .was-validated .form-control:valid {
-  border-color:#5091cd;
+
+.custom-select.is-valid,
+.form-control.is-valid,
+.was-validated .custom-select:valid,
+.was-validated .form-control:valid {
+  border-color: #5091cd;
 }
